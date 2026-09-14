@@ -1,16 +1,101 @@
-# React + Vite
+# AI Travel Planner ✈️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AI Travel Planner is a web application that helps users create personalized travel plans based on their destination, number of days, and trip preferences. The application uses AI to generate travel recommendations and organizes the trip into a structured itinerary.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* 🌍 Search and select travel destinations
+* 🗓️ Generate personalized day-wise travel itineraries
+* 🤖 AI-powered travel recommendations using Google Gemini API
+* 🏨 Display recommended hotels and places to visit
+* 💬 AI chatbot for travel-related queries
+* 📋 View and manage generated trips
+* 📱 Responsive and user-friendly interface
+* 🔐 Firebase integration for application data
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Frontend:** React.js, Vite
+* **Styling:** Tailwind CSS
+* **Programming:** JavaScript
+* **AI:** Google Gemini API
+* **Backend/API:** Node.js API routes
+* **Database/Backend Services:** Firebase
+* **Version Control:** Git & GitHub
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+AI_Travel_Planner/
+│
+├── app/
+│   └── api/
+│       └── generate-trip/
+│
+├── src/
+│   ├── components/
+│   ├── constants/
+│   ├── context/
+│   ├── create-trip/
+│   ├── my-trips/
+│   ├── pages/
+│   ├── services/
+│   └── view-trip/
+│
+├── public/
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+└── README.md
+```
+
+## How It Works
+
+1. The user enters a destination and trip preferences.
+2. The application collects the required travel details.
+3. The Google Gemini API generates travel recommendations.
+4. The generated information is organized into a day-wise itinerary.
+5. Users can view recommended hotels and places to visit.
+6. Generated trips can be accessed through the application.
+
+## Installation and Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Sanjana-shet/AI_Travel_Planner.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd AI_Travel_Planner
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure API keys
+
+Create the required environment configuration file and add the necessary API keys.
+
+**Do not upload API keys or other sensitive credentials to GitHub.**
+
+### 5. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in the terminal.
+
+## Future Improvements
+
+* Add more travel preferences and filters
+* Improve itinerary customization
+* Add map integration
+* Add weather information for destinations
+* Improve authentication and user profile management
